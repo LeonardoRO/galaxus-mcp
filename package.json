@@ -1,0 +1,39 @@
+{
+  "name": "galaxus-mcp",
+  "version": "0.1.0",
+  "description": "Unofficial Model Context Protocol (MCP) server for searching products on Galaxus / Digitec.",
+  "type": "module",
+  "bin": {
+    "galaxus-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "galaxus",
+    "digitec",
+    "shopping"
+  ],
+  "author": "Leonardo Ribeiro Oliveira",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
